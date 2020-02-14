@@ -8,41 +8,28 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.LinearLayout;
 
 import com.google.android.material.navigation.NavigationView;
 
-public class observerHome extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class Targetdata extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     DrawerLayout drawerLayout;
     ActionBarDrawerToggle toggle;
-    LinearLayout targetData;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_observer_home);
+        setContentView(R.layout.activity_targetdata);
 
         //Navigation Drawer
         drawerLayout=findViewById(R.id.drawerHome);
         NavigationView navigationView =(NavigationView) findViewById(R.id.navId);
         navigationView.setNavigationItemSelectedListener(this);
-        toggle=new ActionBarDrawerToggle(observerHome.this,drawerLayout,R.string.open,R.string.close);
+        toggle=new ActionBarDrawerToggle(Targetdata.this,drawerLayout,R.string.open,R.string.close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
-
-        // Target Data activity
-        targetData=findViewById(R.id.targetData);
-        targetData.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                open_target_data();
-            }
-        });
     }
 
 
@@ -73,10 +60,4 @@ public class observerHome extends AppCompatActivity implements NavigationView.On
         return false;
     }
 
-    //Target Data activity
-
-    private void open_target_data() {
-        Intent intent=new Intent(this,Targetdata.class);
-        startActivity(intent);
-    }
 }
