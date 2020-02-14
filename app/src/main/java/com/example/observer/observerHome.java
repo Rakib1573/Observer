@@ -18,6 +18,7 @@ public class observerHome extends AppCompatActivity implements NavigationView.On
     DrawerLayout drawerLayout;
     ActionBarDrawerToggle toggle;
     LinearLayout targetData;
+    LinearLayout correctData;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +39,15 @@ public class observerHome extends AppCompatActivity implements NavigationView.On
         // Target Data activity
         targetData=findViewById(R.id.targetData);
         targetData.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                open_target_data();
+            }
+        });
+
+        //Correct Data Activity
+        correctData=findViewById(R.id.correct_Data_layout);
+        correctData.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 open_target_data();

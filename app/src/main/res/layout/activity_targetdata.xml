@@ -153,19 +153,148 @@
                 android:textColor="@color/colorAccent"
                 android:textColorHint="@color/colorAccent" />
 
-            <ExpandableListView
+            <Spinner
                 android:id="@+id/ZL_bearing_list"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_margin="4dp"
                 android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:selectAllOnFocus="true"
+                android:textColor="#000000"
+                android:textAlignment="center"
+                android:spinnerMode="dropdown"
+                android:entries="@array/Select"
+                android:prompt="@string/Select_prompt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/OT_bearing_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ZL_bearing_layout"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/OT_bearing_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:text="OT Bearing"
+                android:background="@color/colorPrimary"
+                android:textAlignment="center"
+                android:textColor="#212121"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/OT_bearing_edit_text"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:layout_height="wrap_content"
                 android:drawableBottom="@color/colorAccent"
-                android:hint="options"
+                android:hint="Bearing"
+                android:inputType="numberDecimal"
                 android:selectAllOnFocus="true"
                 android:textColor="@color/colorAccent"
                 android:textColorHint="@color/colorAccent" />
 
+            <Spinner
+                android:id="@+id/OT_bearing_list"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:selectAllOnFocus="true"
+                android:textColor="#000000"
+                android:textAlignment="center"
+                android:spinnerMode="dropdown"
+                android:entries="@array/Select"
+                android:prompt="@string/Select_prompt" />
         </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/correction_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/OT_bearing_layout"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/Correction_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:text="Correction"
+            android:background="@color/colorPrimary"
+            android:textAlignment="center"
+            android:textColor="#212121"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/corr_RT_LT_edit_text"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:layout_height="wrap_content"
+            android:drawableBottom="@color/colorAccent"
+            android:hint="RT/LT"
+            android:inputType="numberSigned"
+            android:selectAllOnFocus="true"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent" />
+
+        <EditText
+            android:id="@+id/corr_ADD_DROP_edit_text"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:layout_height="wrap_content"
+            android:drawableBottom="@color/colorAccent"
+            android:hint="Add/Drop"
+            android:inputType="numberSigned"
+            android:selectAllOnFocus="true"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/target_data_submit_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/correction_layout"
+            android:layout_marginTop="60dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/target_data_cancel_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                android:text="Cancel"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:background="@color/colorPrimary"/>
+
+            <Button
+                android:id="@+id/target_data_submit_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                android:text="Submit"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:background="@color/colorPrimary"/>
+
+        </LinearLayout>
+
     </RelativeLayout>
 
     <com.google.android.material.navigation.NavigationView
