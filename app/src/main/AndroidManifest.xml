@@ -9,8 +9,10 @@
         android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".FireEffect"></activity>
+        <activity android:name=".ConfirmFire"></activity>
         <activity android:name=".Targetdata"></activity>
-        <activity android:name=".observerHome" />
+        <activity android:name=".observerHome" ></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

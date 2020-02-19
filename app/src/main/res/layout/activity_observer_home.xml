@@ -8,6 +8,14 @@
     android:padding="4dp"
     tools:context=".observerHome">
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/observer_home_recycler_view">
+
+
+
+
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -107,6 +115,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/fire_effect_layout"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -132,6 +141,8 @@
                 </LinearLayout>
             </LinearLayout>
         </RelativeLayout>
+
+    </androidx.recyclerview.widget.RecyclerView>
 
     <com.google.android.material.navigation.NavigationView
         android:layout_width="wrap_content"

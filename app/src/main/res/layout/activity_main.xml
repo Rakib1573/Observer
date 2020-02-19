@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/observer_1"
+    android:background="@color/colorBackgrd"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -17,57 +17,81 @@
         android:id="@+id/observer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/textview_border"
+        android:background="@drawable/btn_backgrd"
         android:text="Digital plotter\nobserver module"
         android:textAlignment="center"
         android:textAllCaps="true"
-        android:textColor="#fafafa"
+        android:textColor="@color/colorText"
         android:textSize="30sp"
         android:layout_margin="4dp"
         android:layout_alignParentTop="true"/>
 
-    <EditText
-        android:id="@+id/username"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="180dp"
-        android:layout_marginEnd="24dp"
+        android:orientation="vertical"
+        android:layout_margin="30dp"
+        android:background="@drawable/container_backgrd">
 
-        android:drawableBottom="@color/colorAccent"
-        android:hint="@string/prompt_User_name"
-        android:inputType="textPersonName"
-        android:selectAllOnFocus="true"
-        android:textColor="@color/colorPrimaryDark"
-        android:textColorHint="@color/colorPrimaryDark" />
 
-    <EditText
-        android:id="@+id/password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="24dp"
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"/>
 
-        android:drawableBottom="@color/colorAccent"
-        android:hint="@string/prompt_password"
-        android:imeActionLabel="@string/action_sign_in_short"
-        android:imeOptions="actionDone"
-        android:inputType="textPassword"
-        android:selectAllOnFocus="true"
-        android:textColor="@color/colorPrimaryDark"
-        android:textColorHint="@color/colorPrimaryDark" />
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/btn_backgrd"
+                android:drawableBottom="@color/colorAccent"
+                android:hint="@string/prompt_User_name"
+                android:inputType="textPersonName"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/colorText"
+                android:textColorHint="@color/colorText"
+                android:textSize="20sp"
+                android:padding="8dp"/>
 
-    <Button
-        android:id="@+id/login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginBottom="64dp"
-        android:text="@string/action_sign_in"
-        android:textSize="20sp" />
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/btn_backgrd"
+                android:drawableBottom="@color/colorAccent"
+                android:hint="@string/prompt_password"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/colorText"
+                android:textColorHint="@color/colorText"
+                android:textSize="20sp"
+                android:padding="8dp"/>
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="48dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/btn_backgrd"
+                android:text="@string/action_sign_in"
+                android:textSize="25sp"
+                android:textColor="@color/colorText"
+                android:padding="10dp" />
+
+    </LinearLayout>
 
 </LinearLayout>

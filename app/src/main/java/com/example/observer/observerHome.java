@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,6 +20,9 @@ public class observerHome extends AppCompatActivity implements NavigationView.On
     ActionBarDrawerToggle toggle;
     LinearLayout targetData;
     LinearLayout correctData;
+    LinearLayout confirmFire;
+    LinearLayout fireEffect;
+    RecyclerView menu_list_observer_home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +57,27 @@ public class observerHome extends AppCompatActivity implements NavigationView.On
                 open_target_data();
             }
         });
+
+        //Confirm Fire Activity
+        confirmFire=findViewById(R.id.confirmFire_layout);
+        confirmFire.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                open_confirm_fire();
+            }
+        });
+
+        //Fire Effect Activity
+        fireEffect=findViewById(R.id.fire_effect_layout);
+        fireEffect.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                open_fire_effect();
+            }
+        });
+
+        //Recycler view
+        menu_list_observer_home=findViewById(R.id.observer_home_recycler_view);
     }
 
 
@@ -87,6 +112,18 @@ public class observerHome extends AppCompatActivity implements NavigationView.On
 
     private void open_target_data() {
         Intent intent=new Intent(this,Targetdata.class);
+        startActivity(intent);
+    }
+
+    //Confirm Fire activity
+    private void open_confirm_fire() {
+        Intent intent=new Intent(this,ConfirmFire.class);
+        startActivity(intent);
+    }
+
+    //Fire Effect activity
+    private void open_fire_effect() {
+        Intent intent=new Intent(this,FireEffect.class);
         startActivity(intent);
     }
 }
