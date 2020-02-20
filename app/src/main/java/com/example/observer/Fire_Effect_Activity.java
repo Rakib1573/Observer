@@ -8,19 +8,10 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
-import android.widget.ExpandableListAdapter;
-import android.widget.ExpandableListView;
-import android.widget.Spinner;
 
 import com.google.android.material.navigation.NavigationView;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-
-public class FireEffect extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class Fire_Effect_Activity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     DrawerLayout drawerLayout;
     ActionBarDrawerToggle toggle;
@@ -34,7 +25,7 @@ public class FireEffect extends AppCompatActivity implements NavigationView.OnNa
         drawerLayout = findViewById(R.id.drawerHome);
         NavigationView navigationView = (NavigationView) findViewById(R.id.navId);
         navigationView.setNavigationItemSelectedListener(this);
-        toggle = new ActionBarDrawerToggle(FireEffect.this, drawerLayout, R.string.open, R.string.close);
+        toggle = new ActionBarDrawerToggle(Fire_Effect_Activity.this, drawerLayout, R.string.open, R.string.close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
 
@@ -55,16 +46,16 @@ public class FireEffect extends AppCompatActivity implements NavigationView.OnNa
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
         if(item.getItemId()==R.id.homeId){
-            Intent intent = new Intent(this,observerHome.class);
+            Intent intent = new Intent(this, Observer_Home_Activity.class);
             startActivity(intent);
         }
         else if(item.getItemId()==R.id.notificationId){
-            Intent intent = new Intent(this,observerHome.class);
+            Intent intent = new Intent(this, Observer_Home_Activity.class);
             startActivity(intent);
         }
 
         else if(item.getItemId()==R.id.logOutId){
-            Intent intent = new Intent(this,MainActivity.class);
+            Intent intent = new Intent(this, Log_in_Activity.class);
             startActivity(intent);
         }
         return false;

@@ -9,11 +9,11 @@
         android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FireEffect"></activity>
-        <activity android:name=".ConfirmFire"></activity>
-        <activity android:name=".Targetdata"></activity>
-        <activity android:name=".observerHome" ></activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".Fire_Effect_Activity"></activity>
+        <activity android:name=".Confirm_Fire_Activity"></activity>
+        <activity android:name=".Target_Data_Activity"></activity>
+        <activity android:name=".Observer_Home_Activity" ></activity>
+        <activity android:name=".Log_in_Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

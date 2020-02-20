@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class MainActivity extends AppCompatActivity {
+public class Log_in_Activity extends AppCompatActivity {
 
     private Button button;
     private EditText user_name;
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(user_name.getText().toString().equals("admin") && password.getText().toString().equals("1234")){
-                    Intent intent=new Intent(MainActivity.this,observerHome.class);
+                    Intent intent=new Intent(Log_in_Activity.this, Observer_Home_Activity.class);
                     startActivity(intent);
                 }
             }

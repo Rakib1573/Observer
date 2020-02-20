@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="4dp"
-    tools:context=".observerHome">
+    tools:context=".Observer_Home_Activity"
+    android:background="@color/colorBackgrd">
 
 
     <RelativeLayout
@@ -18,37 +19,42 @@
             android:id="@+id/confirm_fire_heading"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorPrimaryDark"
+            android:background="@drawable/btn_backgrd"
             android:layout_margin="4dp"
             android:layout_alignParentTop="true"
             android:text="Confirm Fire"
             android:textAlignment="center"
             android:textSize="40sp"
-            android:textColor="#212121"/>
+            android:textColor="@color/colorText"/>
 
         <LinearLayout
             android:id="@+id/layout_confirm_fire"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/confirm_fire_heading"
-            android:layout_margin="4dp"
-            android:orientation="vertical">
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:background="@drawable/menu_container_backgrd">
 
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="190dp"
                 android:src="@drawable/target" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
+                android:layout_marginTop="8dp"
                 android:layout_weight="1"
                 android:text="Confirm Fire"
-                android:background="@drawable/textview_border"
+                android:background="@drawable/btn_backgrd"
                 android:textAlignment="center"
-                android:textColor="#212121"
+                android:textColor="@color/colorText"
                 android:textSize="30sp"/>
             </LinearLayout>
 
@@ -57,24 +63,29 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/layout_confirm_fire"
-            android:layout_margin="4dp"
-            android:orientation="vertical">
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:background="@drawable/menu_container_backgrd">
 
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="190dp"
                 android:src="@drawable/target" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
                 android:text="Cancel Fire"
-                android:background="@drawable/textview_border"
+                android:background="@drawable/btn_backgrd"
                 android:textAlignment="center"
-                android:textColor="#212121"
+                android:textColor="@color/colorText"
                 android:textSize="30sp"/>
             </LinearLayout>
     </RelativeLayout>

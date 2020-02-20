@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="4dp"
-    tools:context="com.example.observer.Targetdata">
+    tools:context="com.example.observer.Target_Data_Activity">
 
 
     <RelativeLayout
@@ -17,13 +17,13 @@
             android:id="@+id/target_data_heading"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorPrimaryDark"
+            android:background="@drawable/btn_backgrd"
             android:layout_margin="4dp"
             android:layout_alignParentTop="true"
             android:text="Target Data"
             android:textAlignment="center"
             android:textSize="40sp"
-            android:textColor="#212121"/>
+            android:textColor="@color/colorText"/>
 
         <LinearLayout
             android:id="@+id/target_GR_layout"
@@ -39,9 +39,9 @@
                 android:layout_margin="4dp"
                 android:layout_weight="1"
                 android:text="Target GR"
-                android:background="@color/colorPrimary"
+                android:background="@drawable/btn_backgrd"
                 android:textAlignment="center"
-                android:textColor="#212121"
+                android:textColor="@color/colorText"
                 android:textSize="20sp"/>
 
             <EditText
@@ -87,9 +87,9 @@
                 android:layout_margin="4dp"
                 android:layout_weight="1"
                 android:text="Gun Loc GR"
-                android:background="@color/colorPrimary"
+                android:background="@drawable/btn_backgrd"
                 android:textAlignment="center"
-                android:textColor="#212121"
+                android:textColor="@color/colorText"
                 android:textSize="20sp"/>
 
             <EditText
@@ -135,9 +135,9 @@
                 android:layout_margin="4dp"
                 android:layout_weight="1"
                 android:text="ZL Bearing"
-                android:background="@color/colorPrimary"
+                android:background="@drawable/btn_backgrd"
                 android:textAlignment="center"
-                android:textColor="#212121"
+                android:textColor="@color/colorText"
                 android:textSize="20sp"/>
 
             <EditText
@@ -159,9 +159,9 @@
                 android:layout_weight="1"
                 android:layout_margin="4dp"
                 android:layout_height="wrap_content"
-                android:background="@color/colorPrimary"
+                android:background="@drawable/btn_backgrd"
                 android:selectAllOnFocus="true"
-                android:textColor="#000000"
+                android:textColor="@color/colorText"
                 android:textAlignment="center"
                 android:spinnerMode="dropdown"
                 android:entries="@array/Select"
@@ -183,9 +183,9 @@
                 android:layout_margin="4dp"
                 android:layout_weight="1"
                 android:text="OT Bearing"
-                android:background="@color/colorPrimary"
+                android:background="@drawable/btn_backgrd"
                 android:textAlignment="center"
-                android:textColor="#212121"
+                android:textColor="@color/colorText"
                 android:textSize="20sp"/>
 
             <EditText
@@ -207,9 +207,9 @@
                 android:layout_weight="1"
                 android:layout_margin="4dp"
                 android:layout_height="wrap_content"
-                android:background="@color/colorPrimary"
+                android:background="@drawable/btn_backgrd"
                 android:selectAllOnFocus="true"
-                android:textColor="#000000"
+                android:textColor="@color/colorText"
                 android:textAlignment="center"
                 android:spinnerMode="dropdown"
                 android:entries="@array/Select"
@@ -231,9 +231,9 @@
             android:layout_margin="4dp"
             android:layout_weight="1"
             android:text="Correction"
-            android:background="@color/colorPrimary"
+            android:background="@drawable/btn_backgrd"
             android:textAlignment="center"
-            android:textColor="#212121"
+            android:textColor="@color/colorText"
             android:textSize="20sp"/>
 
         <EditText
@@ -280,7 +280,8 @@
                 android:text="Cancel"
                 android:textAlignment="center"
                 android:textSize="30sp"
-                android:background="@color/colorPrimary"/>
+                android:textColor="@color/colorText"
+                android:background="@drawable/btn_backgrd"/>
 
             <Button
                 android:id="@+id/target_data_submit_btn"
@@ -291,7 +292,8 @@
                 android:text="Submit"
                 android:textAlignment="center"
                 android:textSize="30sp"
-                android:background="@color/colorPrimary"/>
+                android:background="@drawable/btn_backgrd"
+                android:textColor="@color/colorText"/>
 
         </LinearLayout>
 
