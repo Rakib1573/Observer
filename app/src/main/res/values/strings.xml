@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">DIGITAL PLOTTER OBSERVER MODULE</string>
+    <string name="app_name">OBSERVER MODULE</string>
     <string name="prompt_User_name">User Name</string>
     <string name="prompt_password">Password</string>
     <string name="action_sign_in">Sign in </string>

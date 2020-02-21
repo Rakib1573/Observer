@@ -25,7 +25,7 @@ public class Observer_Home_Activity extends AppCompatActivity implements Navigat
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_observer_home);
+        setContentView(R.layout.observer_home);
 
         //Navigation Drawer
         drawerLayout=findViewById(R.id.drawerHome);
@@ -52,7 +52,7 @@ public class Observer_Home_Activity extends AppCompatActivity implements Navigat
         correctData.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                open_target_data();
+                open_correct_data();
             }
         });
 
@@ -109,6 +109,13 @@ public class Observer_Home_Activity extends AppCompatActivity implements Navigat
 
     private void open_target_data() {
         Intent intent=new Intent(this, Target_Data_Activity.class);
+        startActivity(intent);
+    }
+
+    //Correct Data activity
+
+    private void open_correct_data() {
+        Intent intent=new Intent(this, Correct_Data_Activity.class);
         startActivity(intent);
     }
 

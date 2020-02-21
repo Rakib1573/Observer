@@ -43,14 +43,14 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="190dp"
-                android:src="@drawable/target" />
+                android:src="@drawable/target_neutralized" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
-                android:text="Target Destroyed"
+                android:text="Target Neutralized"
                 android:background="@drawable/btn_backgrd"
                 android:textAlignment="center"
                 android:textColor="@color/colorText"
@@ -73,14 +73,14 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="190dp"
-                android:src="@drawable/target" />
+                android:src="@drawable/data_correction" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
-                android:text="Data Correction"
+                android:text="Not Neutralized\nData Correction"
                 android:background="@drawable/btn_backgrd"
                 android:textAlignment="center"
                 android:textColor="@color/colorText"

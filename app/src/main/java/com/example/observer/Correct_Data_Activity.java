@@ -14,7 +14,7 @@ import android.widget.Spinner;
 
 import com.google.android.material.navigation.NavigationView;
 
-public class Target_Data_Activity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class Correct_Data_Activity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     DrawerLayout drawerLayout;
     ActionBarDrawerToggle toggle;
@@ -27,13 +27,13 @@ public class Target_Data_Activity extends AppCompatActivity implements Navigatio
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.target_data);
+        setContentView(R.layout.correct__data);
 
         //Navigation Drawer
         drawerLayout = findViewById(R.id.drawerHome);
         NavigationView navigationView = (NavigationView) findViewById(R.id.navId);
         navigationView.setNavigationItemSelectedListener(this);
-        toggle = new ActionBarDrawerToggle(Target_Data_Activity.this, drawerLayout, R.string.open, R.string.close);
+        toggle = new ActionBarDrawerToggle(Correct_Data_Activity.this, drawerLayout, R.string.open, R.string.close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
 
@@ -43,7 +43,7 @@ public class Target_Data_Activity extends AppCompatActivity implements Navigatio
         addListenerOnSpinnerItemSelection();
 
         //cancel,submit button
-        cancel=findViewById(R.id.target_data_cancel_btn);
+        cancel=findViewById(R.id.correct_data_cancel_btn);
         cancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -51,7 +51,7 @@ public class Target_Data_Activity extends AppCompatActivity implements Navigatio
             }
         });
 
-        submit=findViewById(R.id.target_data_submit_btn);
+        submit=findViewById(R.id.correct_data_submit_btn);
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -92,10 +92,10 @@ public class Target_Data_Activity extends AppCompatActivity implements Navigatio
     // add items into spinner dynamically
 
     public void addListenerOnSpinnerItemSelection() {
-        ZL_bearing = (Spinner) findViewById(R.id.ZL_bearing_list);
+        ZL_bearing = (Spinner) findViewById(R.id.correct_ZL_bearing_list);
         ZL_bearing.setOnItemSelectedListener(new spinner());
 
-        OT_bearing = (Spinner) findViewById(R.id.OT_bearing_list);
+        OT_bearing = (Spinner) findViewById(R.id.correct_OT_bearing_list);
         OT_bearing.setOnItemSelectedListener(new spinner());
     }
 
