@@ -24,9 +24,9 @@ public class Log_in_Activity extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.log_in);
 
-        button=findViewById(R.id.login);
-        user_name=findViewById(R.id.username);
-        password=findViewById(R.id.password);
+        button=findViewById(R.id.btLogin);
+        user_name=findViewById(R.id.etUsername);
+        password=findViewById(R.id.etPassword);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="4dp"
-    tools:context=".Observer_Home_Activity"
+    tools:context=".Fire_Effect_Activity"
     android:background="@color/colorBackgrd">
 
 
@@ -37,7 +37,8 @@
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"
             android:orientation="vertical"
-            android:background="@drawable/menu_container_backgrd">
+            android:background="@drawable/menu_container_backgrd"
+            android:onClick="pop_neu">
 
 
             <ImageView
@@ -67,7 +68,8 @@
             android:layout_marginLeft="30dp"
             android:orientation="vertical"
             android:background="@drawable/menu_container_backgrd"
-            android:layout_marginBottom="8dp">
+            android:layout_marginBottom="8dp"
+            android:onClick="pop_not_neu">
 
 
             <ImageView

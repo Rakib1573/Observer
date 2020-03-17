@@ -23,7 +23,9 @@
             android:text="Target Data"
             android:textAlignment="center"
             android:textSize="40sp"
-            android:textColor="@color/colorText"/>
+            android:textColor="@color/colorText"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal" />
 
         <LinearLayout
             android:id="@+id/target_GR_layout"
@@ -42,7 +44,9 @@
                 android:background="@drawable/btn_backgrd"
                 android:textAlignment="center"
                 android:textColor="@color/colorText"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal" />
 
             <EditText
                 android:id="@+id/target_GR_easting"
@@ -90,7 +94,8 @@
                 android:background="@drawable/btn_backgrd"
                 android:textAlignment="center"
                 android:textColor="@color/colorText"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+                android:gravity="center_horizontal" />
 
             <EditText
                 android:id="@+id/gun_loc_GR_easting"
@@ -138,7 +143,8 @@
                 android:background="@drawable/btn_backgrd"
                 android:textAlignment="center"
                 android:textColor="@color/colorText"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+                android:gravity="center_horizontal" />
 
             <EditText
                 android:id="@+id/ZL_bearing_edit_text"
@@ -166,7 +172,8 @@
                 android:textAlignment="center"
                 android:spinnerMode="dropdown"
                 android:entries="@array/Select"
-                android:prompt="@string/Select_prompt" />
+                android:prompt="@string/Select_prompt"
+                android:gravity="center_horizontal" />
         </LinearLayout>
 
         <LinearLayout
@@ -187,7 +194,8 @@
                 android:background="@drawable/btn_backgrd"
                 android:textAlignment="center"
                 android:textColor="@color/colorText"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+                android:gravity="center_horizontal" />
 
             <EditText
                 android:id="@+id/OT_bearing_edit_text"
@@ -215,7 +223,8 @@
                 android:textAlignment="center"
                 android:spinnerMode="dropdown"
                 android:entries="@array/Select"
-                android:prompt="@string/Select_prompt" />
+                android:prompt="@string/Select_prompt"
+                android:gravity="center_horizontal" />
         </LinearLayout>
 
         <LinearLayout
@@ -236,7 +245,8 @@
             android:background="@drawable/btn_backgrd"
             android:textAlignment="center"
             android:textColor="@color/colorText"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            android:gravity="center_horizontal" />
 
         <EditText
             android:id="@+id/corr_RT_LT_edit_text"
@@ -283,7 +293,8 @@
                 android:textAlignment="center"
                 android:textSize="30sp"
                 android:textColor="@color/colorText"
-                android:background="@drawable/btn_backgrd"/>
+                android:background="@drawable/btn_backgrd"
+                android:gravity="center_horizontal" />
 
             <Button
                 android:id="@+id/target_data_submit_btn"
@@ -295,7 +306,8 @@
                 android:textAlignment="center"
                 android:textSize="30sp"
                 android:background="@drawable/btn_backgrd"
-                android:textColor="@color/colorText"/>
+                android:textColor="@color/colorText"
+                android:gravity="center_horizontal" />
 
         </LinearLayout>
 

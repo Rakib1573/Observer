@@ -4,6 +4,7 @@
     tools:showIn="navigation View">
 
     <group android:checkableBehavior="single">
+
         <item android:title="Home"
             android:id="@+id/homeId">
         </item>
@@ -15,6 +16,7 @@
         <item android:title="Log out"
             android:id="@+id/logOutId">
         </item>
+
 
     </group>
 

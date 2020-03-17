@@ -47,7 +47,7 @@
                         android:textAlignment="center"
                         android:textColor="@color/colorText"
                         android:textSize="25sp"
-                        />
+                        android:gravity="center_horizontal" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -75,7 +75,8 @@
                         android:background="@drawable/btn_backgrd"
                         android:textAlignment="center"
                         android:textColor="@color/colorText"
-                        android:textSize="25sp"/>
+                        android:textSize="25sp"
+                        android:gravity="center_horizontal" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -111,7 +112,8 @@
                         android:background="@drawable/btn_backgrd"
                         android:textAlignment="center"
                         android:textColor="@color/colorText"
-                        android:textSize="25sp"/>
+                        android:textSize="25sp"
+                        android:gravity="center_horizontal" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -139,7 +141,8 @@
                         android:background="@drawable/btn_backgrd"
                         android:textAlignment="center"
                         android:textColor="@color/colorText"
-                        android:textSize="25sp"/>
+                        android:textSize="25sp"
+                        android:gravity="center_horizontal" />
                 </LinearLayout>
             </LinearLayout>
         </RelativeLayout>
