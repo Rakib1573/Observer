@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorWhite"
+    tools:context=".TargetHome"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="0.95"
+        android:scaleY="0.95">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/imgArticle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/target_data2"/>
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:layout_marginBottom="-10dp"
+                    android:background="@drawable/bg_shadow"
+                    android:layout_alignBottom="@+id/imgArticle"/>
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Instructions"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/nexabold"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_alignTop="@+id/view"/>
+
+                <TextView
+                    android:id="@+id/tvDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1. Turn on GPS to get OWN LOCATION GR\n\n
+2. Press MAP to select the target location\n\n
+3. Then Go to the MENU and Press DISTANCE and BEARING\n\n
+4. Then Press DONE.\n\n
+3. To rectify previous sent data select RECTIFY\n\n"
+                    android:textSize="20sp"
+                    android:layout_below="@+id/tvTitle"
+                    android:fontFamily="@font/nexalight"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginStart="20dp" />
+
+                <Button
+                    android:id="@+id/btAutoMode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="20dp"
+                    android:textAllCaps="false"
+                    android:background="@drawable/bt_ui_readmore"
+                    android:fontFamily="@font/nexabold"
+                    android:text="MAP"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="25sp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:layout_alignBottom="@+id/imgArticle"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+                <Button
+                    android:id="@+id/btManualMode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="20dp"
+                    android:textAllCaps="false"
+                    android:background="@drawable/bt_ui_readmore"
+                    android:fontFamily="@font/nexabold"
+                    android:text="RECTIFY"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="25sp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:layout_alignBottom="@+id/imgArticle"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorWhite"
+    tools:context=".TargetDataUI"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="0.95"
+        android:scaleY="0.95">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/imgArticle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/target_data2"/>
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="580dp"
+                    android:layout_marginBottom="-10dp"
+                    android:background="@drawable/bg_shadow"
+                    android:layout_alignBottom="@+id/imgArticle"/>
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OWN LOCATION GR"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/nexabold"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_alignTop="@+id/view"/>
+
+                <EditText
+                    android:id="@+id/etOwnEast"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Easting"
+                    android:textColorHint="@color/colorPurple"
+                    android:textSize="20sp"
+                    android:inputType="numberDecimal"
+                    android:layout_below="@+id/tvTitle"
+                    android:fontFamily="@font/nexalight"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginStart="20dp" />
+                <EditText
+                    android:id="@+id/etOwnNorth"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Northing"
+                    android:textSize="20sp"
+                    android:inputType="numberDecimal"
+                    android:textColorHint="@color/colorPurple"
+                    android:layout_below="@+id/tvTitle"
+                    android:layout_toRightOf="@+id/etOwnEast"
+                    android:fontFamily="@font/nexalight"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/etOwnEast" />
+
+                <TextView
+                    android:id="@+id/tvTargetGR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TARGET LOCATION GR"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/nexabold"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_below="@+id/etOwnEast"/>
+
+                <EditText
+                    android:id="@+id/etTargetEast"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Easting"
+                    android:textColorHint="@color/colorPurple"
+                    android:textSize="20sp"
+                    android:inputType="numberDecimal"
+                    android:layout_below="@+id/tvTargetGR"
+                    android:fontFamily="@font/nexalight"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginStart="20dp" />
+
+                <EditText
+                    android:id="@+id/etTargetNorth"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Northing"
+                    android:textSize="20sp"
+                    android:inputType="numberDecimal"
+                    android:textColorHint="@color/colorPurple"
+                    android:layout_below="@+id/tvTargetGR"
+                    android:layout_toRightOf="@+id/etTargetEast"
+                    android:fontFamily="@font/nexalight"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/etTargetEast" />
+
+                <TextView
+                    android:id="@+id/tvOTbg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OT BEARING"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/nexabold"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_below="@+id/etTargetEast"/>
+
+                <EditText
+                    android:id="@+id/etOTbg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:hint="Degree"
+                    android:textColorHint="@color/colorPurple"
+                    android:textSize="20sp"
+                    android:layout_below="@+id/tvOTbg"
+                    android:fontFamily="@font/nexalight"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginStart="20dp" />
+
+                <TextView
+                    android:id="@+id/tvAddDrop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CORRECTION"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/nexabold"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_below="@+id/etOTbg"/>
+
+                <EditText
+                    android:id="@+id/etAdd"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Rt/Lt"
+                    android:inputType="numberSigned"
+                    android:textColorHint="@color/colorPurple"
+                    android:textSize="20sp"
+                    android:layout_below="@+id/tvAddDrop"
+                    android:fontFamily="@font/nexalight"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginStart="20dp" />
+
+                <EditText
+                    android:id="@+id/etDrop"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Add/Drop"
+                    android:inputType="numberSigned"
+                    android:textSize="20sp"
+                    android:textColorHint="@color/colorPurple"
+                    android:layout_below="@+id/tvAddDrop"
+                    android:layout_toRightOf="@+id/etAdd"
+                    android:fontFamily="@font/nexalight"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/etAdd" />
+
+                <Button
+                    android:id="@+id/btAutoMode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="20dp"
+                    android:textAllCaps="false"
+                    android:background="@drawable/bt_ui_readmore"
+                    android:fontFamily="@font/nexabold"
+                    android:text="SEND TO CP"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="25sp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:layout_alignBottom="@+id/imgArticle"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</RelativeLayout>

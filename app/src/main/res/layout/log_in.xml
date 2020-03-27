@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="45dp"
-        android:text="Welcome to apps"
+        android:text="Welcome to Observer Module"
         android:textColor="@color/colorWhite"
         android:textSize="17sp" />
 
@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvDesc"
         android:layout_alignLeft="@+id/tvDesc"
-        android:text="Login"
+        android:text="Log in"
         android:transitionName="login"
         android:textColor="@color/colorWhite"
         android:textSize="30sp"
@@ -121,6 +121,7 @@
                         android:layout_below="@+id/tvUsername"
                         android:layout_marginLeft="15dp"
                         android:layout_marginRight="15dp"
+                        android:textColor="#8e24aa"
                         android:drawableRight="@drawable/ic_person"
                         android:drawablePadding="30dp"
                         android:inputType="text"
@@ -144,6 +145,7 @@
                         android:layout_below="@+id/tvPassword"
                         android:layout_marginLeft="15dp"
                         android:layout_marginRight="15dp"
+                        android:textColor="#8e24aa"
                         android:drawableRight="@drawable/ic_lock"
                         android:drawablePadding="30dp"
                         android:inputType="textPassword"
@@ -190,7 +192,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:background="@drawable/bt_uisquare"
-                    android:text="Login"
+                    android:text="Log in"
                     android:textAllCaps="false"
                     android:textColor="@color/colorWhite" />
             </RelativeLayout>
